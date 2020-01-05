@@ -6,7 +6,7 @@ XData ProductionDefinition
 <Production Name="Demo.POCProduction" TestingEnabled="true" LogGeneralTraceEvents="false">
   <Description></Description>
   <ActorPoolSize>2</ActorPoolSize>
-  <Item Name="AWSS3Storage" Category="" ClassName="Demo.BO.AWSS3" PoolSize="5" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="AWSS3Storage" Category="" ClassName="Demo.BO.AWSS3" PoolSize="5" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
   <Item Name="NASAImageProcessing" Category="" ClassName="Demo.BP.DailyImageProcessing" PoolSize="5" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
@@ -24,7 +24,7 @@ XData ProductionDefinition
     <Setting Target="Host" Name="FailureTimeout">15</Setting>
     <Setting Target="Host" Name="ApiKey">zfAgijFyTwKCk5PYtmnObuEgF82ohGNV2wTj9ULz</Setting>
   </Item>
-  <Item Name="WebAPIProcess" Category="" ClassName="Demo.BP.WebApIProcess" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="WebAPIProcess" Category="" ClassName="Demo.BP.WebApIProcess" PoolSize="10" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
   <Item Name="FileTransformProcess" Category="" ClassName="Demo.FTP.BMDailyRead.TransformProcess" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
